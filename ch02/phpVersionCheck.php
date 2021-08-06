@@ -13,7 +13,6 @@
 // 한 줄 주석 처리됨
 /* 여러 행을 주석 처리할 때는
     이와 같이 한다 */
-
     print "PHP버전은 "; // 문자열(String)
     print PHP_VERSION; // 상수(Contant)
     print " 입니다."

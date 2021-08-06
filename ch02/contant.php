@@ -13,6 +13,7 @@
     null = 아무 값이 없음
     그 외 내가 지정하는 값을 define 해줄 수 있음.->
 
+
 <?php
     define("HELLO", "안녕하세요!"); // key : value 형태로 저장
     print HELLO."<p></p>";
