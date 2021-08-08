@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>놀이공원 입장료 계산기</title>
+</head>
+<body>
+    <h1>영진파크에 오신 것을 환영합니다.</h1>
+    <form action="if_sentence_fee.php">
+        입장료 계산을 위해 나이, 복지카드 여부, 국가유공자 여부를 입력해주세요.<br>
+        <input name="age" required placeholder="나이를 입력해주세요" type="number"><br>
+        복지카드 소유<input type="checkbox" name="welfare"><br>
+        국가유공자<input type="checkbox" name="yukong"><br>
+        17:10이후 입장<input type="checkbox" name="after1710"><br>
+        <input type="submit" value="계산하기">
+    </form>
+</body>
+</html>
