@@ -1,5 +1,6 @@
 # PHP_study
 PHP 학습을 위한 Repository입니다.
+[Velog 보러가기](https://velog.io/@ipinid613?tag=php)
 
 ## DAY 01
 - PHP 기본 개념
