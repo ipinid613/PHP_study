@@ -12,11 +12,11 @@ session_start();
     </head>
     <body>
     <?php
-    if(isset($_COOKIE["username"])){
-        $_SESSION["username"] = $_COOKIE["username"];
+    if(isset($_COOKIE["username"])){ // 로그인 유지가 되어있는 경우(쿠키가 있는 경우)
+        $_SESSION["username"] = $_COOKIE["username"]; // 세션에 쿠키값을 할당해줌. (아래 38번째 줄)에서 유저명을 필요로 하기 때문
     }
 
-    if (!isset($_SESSION['username'])){
+    if (!isset($_SESSION['username'])){ // 세션이 없는 경우, 로그인 폼을 표시해줌.
     ?>
     <form action="cookie_setcookie&login.php" method="post">
         <table border="1">
@@ -34,8 +34,10 @@ session_start();
             </tr>
         </table>
     </form>
-    <?php } else {
+    <?php } else { // 세션이 있는 경우
         print $_SESSION["username"]."님 환영합니다.";?>
+<!--로그인한 유저의 이름이 필요하므로 세션에 유저명을 담은 쿠키를 할당(로그인 유지기능 때문에 쿠키가 있는 경우, 15번째 줄에서 처럼 처리)해주고,
+    쿠키가 없는 경우는 세션 그 자체를 그냥 표시. 즉, 쿠키가 있든 없든 세션을 표기해주기 위해 38번줄 코드가 필요함 (admin이라고 표시됨)-->
         <button><a href="logout.php">로그아웃</a></button>
            <?php } ?>
     </body>
