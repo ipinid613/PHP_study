@@ -41,4 +41,6 @@ PHP 학습을 위한 Repository입니다.
   - 로그아웃 구현(unset 함수 이용)
 
 ## DAY 06
-- MySQL
+- MySQL 학습
+  - xampp환경에서 MySQL 실행방법(cmd 활용)
+  - 문법 학습 -> DB 생성/삭제, 테이블 생성/삭제, 테이블 내 데이터 생성/삭제/수정
